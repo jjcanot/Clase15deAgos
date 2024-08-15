@@ -5,7 +5,7 @@ st.title("PINTUPRO")
 
 st.header("Soluciones creativas a tu alcance")
 st.write("Contactanos al 300 691 6726")
-image = Image.open('Pintupro.png')
+image = Image.open("Pintupro.png")
 
 
 
