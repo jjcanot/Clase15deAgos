@@ -40,7 +40,7 @@ with col2:
          texto = st.text_input('¿Cuantas habitaciones tiene?', 'Habitaciones')
          st.write("Las habitaciones son", texto, " ")
 
-with st.slidebar:
+with st.sidebar:
      st.subheader("Configurar la modalidad")
      mod_radio = st.radio("escoge la modalidad de uso",('La ropa', 'esta dormido', 'ninguna'))
     
