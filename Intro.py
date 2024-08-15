@@ -39,6 +39,6 @@ with col2:
          st.write("Las habitaciones son", texto, " ")
 
 with st.sidebar:
-     st.subheader("Configurar la modalidad")
-     mod_radio = st.radio("escoge la modalidad de uso",('La ropa', 'esta dormido', 'ninguna'))
+     st.subheader("Que servicio requieres")
+     mod_radio = st.radio("escoge el servicio",('Pintura monocromatica', 'Pintura multicromatica', 'Pintura artistica'))
     
