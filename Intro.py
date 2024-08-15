@@ -2,10 +2,10 @@ import streamlit as st
 from PIL import Image
 
 st.title("PINTUPRO")
-image = Image.open('Pintupro.png')
+
 st.header("Soluciones creativas a tu alcance")
 st.write("Contactanos al 300 691 6726")
-
+image = Image.open('Pintupro.png')
 
 texto = st.text_input('Describe el espacio a intervenir', 'Este es mi texto')
 st.write("El espacio es", texto)
