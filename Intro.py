@@ -5,12 +5,12 @@ st.title("PINTUPRO")
 
 st.header("Soluciones creativas a tu alcance")
 st.write("Contactanos al 300 691 6726")
-image = Image.open("Pintupro.png")
+image = Image.open('Pintupro.png')
+
+st.image(image, caption= 'Interffaces multimodales')
 
 
-
-
-
+texto = st.text_input('Escribe algo', 'Este es mi texto')
 st.write("El texto escrito es", texto)
 
 st.subheader("Ahora usemos 2 columnas")
@@ -23,3 +23,13 @@ with col1:
     resp = st.checkbox('Estoy de acuerdo')
     if resp:
        st.write('Correcto!')
+        
+with col2:
+     st.subheader("Esta es la segunda columna")
+     modo = st.radio("Que modalidad es la principal en tu interfaz", ('Visual','Auditiva','Táctil'))
+     if modo == 'Visual':
+         st. write('La vista es fundamental para tu interfaz')
+     if modo == 'Auditiva':
+         st. write('La audición es fundamental para tu interfaz')
+     if modo == 'Táctil':
+         st. write('El tacto es fundamental para tu interfaz')
