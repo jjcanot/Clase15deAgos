@@ -1,10 +1,8 @@
 import streamlit as st
 from PIL import Image
 
-image = Image.open('Pintupro.png')
-
 st.title("PINTUPRO")
-
+image = Image.open('Pintupro.png')
 st.header("Soluciones creativas a tu alcance")
 st.write("Contactanos al 300 691 6726")
 
