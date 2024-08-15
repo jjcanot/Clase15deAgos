@@ -17,7 +17,7 @@ st.subheader("Queremos conocer más sobre el espacio a intervenir")
 col1, col2 = st.columns(2)
 
 with col1:
-    st.subheader("Información sobre el espacio a intervenir")
+    #st.subheader("Información sobre el espacio a intervenir")
     st.write("¿Tu espacio esta amueblado?")
     resp = st.checkbox('Sí')
     if resp:
@@ -27,15 +27,20 @@ with col1:
        st.write('Perfecto, llevaremos para cubrir tu piso')
         
 with col2:
-     st.subheader("Esta es la segunda columna")
-     modo = st.radio("Que modalidad es la principal en tu interfaz", ('Visual','Auditiva','Táctil'))
-     if modo == 'Visual':
-         st. write('La vista es fundamental para tu interfaz')
-     if modo == 'Auditiva':
-         st. write('La audición es fundamental para tu interfaz')
-     if modo == 'Táctil':
-         st. write('El tacto es fundamental para tu interfaz')
+    # st.subheader("Esta es la segunda columna")
+     modo = st.radio("¡Cuantas habitaciones tiene?", ('Una','Dos','Tres', 'Más'))
+     if modo == 'Una':
+         st. write('La intervención prodía llevar medio un día')
+     if modo == 'Dos':
+         st. write('La intervención podría llevar un día ')
+     if modo == 'Tres':
+         st. write('La intervención podría llevar uno o dos días')
+     if modo == 'Más':
+         st. write('Dinos cuantas habitaciones para poder calcular el tiempo que llevara la intervención')
+         texto = st.text_input('¿Cuantas habitaciones tiene?', 'Habitaciones')
+         st.write("Las habitaciones son", texto, " ")
 
 with st.slidebar:
-    st.subheader("Configurar la modalidad")
+     st.subheader("Configurar la modalidad")
+     mod_radio = st.radio("escoge la modalidad de uso",('La ropa', 'esta dormido', 'ninguna'))
     
