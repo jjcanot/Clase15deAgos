@@ -11,7 +11,7 @@ image = Image.open("Pintupro.png")
 
 
 
-st. writw("El texto escrito es", texto)
+st. write("El texto escrito es", texto)
 
 st.subheader("Ahora usemos 2 columnas")
 
