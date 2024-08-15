@@ -1,2 +1,2 @@
 import streamlit as st
-st.tittle("PINTUPRO")
+st.title("PINTUPRO")
