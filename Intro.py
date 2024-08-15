@@ -5,9 +5,10 @@ st.title("PINTUPRO")
 
 st.header("Soluciones creativas a tu alcance")
 st.write("Contactanos al 300 691 6726")
+
 image = Image.open('Pintupro.png')
 
-texto = st.text_input('Describe el espacio a intervenir', 'Este es mi texto')
+texto = st.text_input('Describe el espacio a intervenir', '...')
 st.write("El espacio es", texto)
 
 st.subheader("Queremos conocer más sobre el espacio a intervenir")
